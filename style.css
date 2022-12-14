@@ -1,0 +1,77 @@
+html,body{height: 100%;}
+
+body{font-family: Arial;
+  background-color: lightseagreen;}
+
+
+.animate{
+    -webkit-transition: all 0.3s ease-out;
+                transition: all 0.3s ease-out;
+
+  }
+
+
+  /*-----------------------------------
+Header
+-----------------------------------*/
+
+.header{background: white}
+.header__logo1{image-resolution: 40 48; float: left; padding: 10px; padding-left: 20px; display: none;}
+#header__logo2{width: 54px; height: 24px;}
+.header__menu{float: right; margin: 0; padding: 0;}
+.header__menu__item{display: inline-block;}
+.header__menu__item a{display: block; padding: 20px;padding-top: 25px;}
+.header__menu__item a:hover{background: rgb(203, 203, 203); padding-bottom: 29px;}
+
+.header__icon-bar{display: block; float: right; padding:20px; display: none;}
+.header__icon-bar span{display: block; height: 3px; width: 30px; background: black; margin-bottom: 5px;}
+
+/*-----------------------------------
+Cover
+-----------------------------------*/
+
+.cover{height: 90%;
+  background-image: url("https://images.unsplash.com/photo-1531405140001-afced33aabe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+  background-size: cover;
+  background-position: center bottom -30px;
+  position: relative;}
+
+.cover__filter{background-color: black;width: 100%;height: 100%;position: absolute;z-index: 0;opacity: 0.5;}
+.cover__caption{display: table;height: 100%;width: 100%;position: relative;z-index: 1;}
+.cover__caption__copy{display: table-cell;vertical-align: middle;text-align: center;color: whitesmoke;}
+
+/*-----------------------------------
+Tablet
+-----------------------------------*/
+@media (max-width:998px){
+
+}
+
+
+/*-----------------------------------
+Smartphone
+-----------------------------------*/
+@media(max-width:767px){
+
+.header__icon-bar{display: block}
+.header__menu__item{display: block;}
+.header__menu{width:100%; height: 0px; overflow: hidden;}
+.is-open{height: 300px; overflow: auto;}
+}
+
+
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */
