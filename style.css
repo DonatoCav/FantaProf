@@ -31,7 +31,7 @@ Cover
 -----------------------------------*/
 
 .cover{height: 90%;
-  background-image: url("https://img.freepik.com/free-photo/school-supplies-top-view-background-chalkboard-free-space_73683-2217.jpg?w=740&t=st=1671211502~exp=1671212102~hmac=832aaa69dbd5d8043ef6890ed7fca56be564113bcc755e90d1cc8f4ef49f4f74 ");
+  background-image: url("https://images.pexels.com/photos/5537542/pexels-photo-5537542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center bottom -30px;
   position: relative;}
@@ -83,3 +83,9 @@ Smartphone
   * html .clearfix { height: 1%; }
   .clearfix { display: block; }
   /* close commented backslash hack */
+  
+
+
+
+
+
