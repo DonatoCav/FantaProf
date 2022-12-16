@@ -1,7 +1,7 @@
 html,body{height: 100%;}
 
 body{font-family: Arial;
-  background-color: lightseagreen;}
+  background-color: #ffffff;}
 
 
 .animate{
@@ -15,13 +15,13 @@ body{font-family: Arial;
 Header
 -----------------------------------*/
 
-.header{background: white}
-.header__logo1{image-resolution: 40 48; float: left; padding: 10px; padding-left: 20px; display: none;}
-#header__logo2{width: 54px; height: 24px;}
+.header{background: #ffffff}
+.header__logo1{float: left; width: 38px; height: 44px;padding: 12px 20px 12px 20px;display: none;}
+.header__logo2{float: left; width: 120px; height: 44px; padding: 14px 20px 14px 20px;}
 .header__menu{float: right; margin: 0; padding: 0;}
 .header__menu__item{display: inline-block;}
-.header__menu__item a{display: block; padding: 20px;padding-top: 25px;}
-.header__menu__item a:hover{background: rgb(203, 203, 203); padding-bottom: 29px;}
+.header__menu__item a{display: block; padding: 20px;padding-top: 25px; color: black;text-decoration: none;font-weight:700;}
+.header__menu__item a:hover{background: rgb(195, 195, 195); padding-bottom: 29px;}
 
 .header__icon-bar{display: block; float: right; padding:20px; display: none;}
 .header__icon-bar span{display: block; height: 3px; width: 30px; background: black; margin-bottom: 5px;}
@@ -31,7 +31,7 @@ Cover
 -----------------------------------*/
 
 .cover{height: 90%;
-  background-image: url("https://images.unsplash.com/photo-1531405140001-afced33aabe5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80");
+  background-image: url("https://images.pexels.com/photos/5537542/pexels-photo-5537542.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-size: cover;
   background-position: center bottom -30px;
   position: relative;}
@@ -57,7 +57,15 @@ Smartphone
 .header__menu__item{display: block;}
 .header__menu{width:100%; height: 0px; overflow: hidden;}
 .is-open{height: 300px; overflow: auto;}
+.header__logo2{display: none;}
+.header__logo1{display: block;}
 }
+
+
+
+
+
+
 
 
 
