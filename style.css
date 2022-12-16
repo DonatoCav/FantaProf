@@ -1,5 +1,7 @@
 html,body{height: 100%;}
 
+body{border: 1px solid red;}
+
 body{font-family: Arial;
   background-color: #ffffff;}
 
@@ -83,10 +85,3 @@ Smartphone
   * html .clearfix { height: 1%; }
   .clearfix { display: block; }
   /* close commented backslash hack */
-  
-
-
-
-
-
-  /*kjsdhgljfasdhgfagskjsdhgfjkahgsdkjhgfksahg*/
