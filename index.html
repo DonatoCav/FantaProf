@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FantaProf</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
+    integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="home.html">
+        <img src="Logo.png" alt="Logo" />
+      </a>
+    </div>
+    <ul class="menu">
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="regolamento.html">REGOLAMENTO</a></li>
+      <li><a href="classifiche.html">BONUS e MALUS</a></li>
+      <li><a href="">CLASSIFICHE</a></li>
+    </ul>
+    <div class="cta">
+      <a href="" class="button">Contatti</a>
+    </div>
+    <div class="wrapper">
+      <button class="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero__content reveal">
+      <p class="intro-text">3A CAT</p>
+      <h1 class="big-text">FantaProf a.s. 2023-2024</h1>
+    </div>
+  </div>
+
+  <div class="poster reveal">
+    <h3 class="med-text" style="font-weight: bold">
+      Il FantaProf più aggiornato
+    </h3>
+  </div>
+  <div class="poster__content zoom">
+    <div>
+      <h3 class="med-text b-m" style="color: green">Bonus</h3>
+      <p style="text-align: justify">
+        Accumula i tuoi punti dopo aver acquistato i professori.
+      </p>
+    </div>
+    <div>
+      <h3 class="med-text b-m" style="color: red">Malus</h3>
+      <p style="text-align: justify">
+        Attenzione ai Malus, ti faranno perdere punti!
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-cover">
+    <div class="bg-cover__title reveal">
+      <h3 class="med-text" style="font-weight: bold; text-align: center">
+        Controlla sempre il tuo posto in classifica!
+      </h3>
+    </div>
+    <div class="bg-cover__text zoom">
+      <h4 class="normal-text b-m">CLASSIFICA ALUNNI</h4>
+      <p style="text-align: justify">
+        Il tuo posto in classifica può variare facilmente, tienila sempre
+        sott'occhio!
+      </p>
+
+      <h4 class="normal-text b-m">STATISTICHE</h4>
+      <p style="text-align: justify">
+        Oltre alla classifica, puoi controllare anche le statistiche generali
+        degli alunni.
+      </p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="col">
+      <h4 class="normal-text" style="font-weight: bold">
+        FantaProf a.s. 2023-2024
+      </h4>
+      <p style="font-weight: bold">3A CAT</p>
+    </div>
+  </footer>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+    integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function () {
+      /* Open Panel */
+      $(".wrapper").on("click", function () {
+        $(".menu").toggleClass("menu--open");
+      });
+    });
+    ScrollReveal().reveal(".reveal", {
+      distance: "100px",
+      duration: 1500,
+      easing: "cubic-bezier(0.215, 0.610, 0.355, 1)",
+      interval: 600,
+    });
+    ScrollReveal().reveal(".zoom", {
+      duration: 1500,
+      easing: "cubic-bezier(0.215, 0.610, 0.355, 1)",
+      interval: 200,
+      scale: 0.65,
+    });
+  </script>
+  <script>
+    const nav = document.querySelector(".nav");
+    nav.addEventListener("click", (event) => {
+      nav.classList.toggle("open");
+    });
+  </script>
+</body>
+
+</html>
